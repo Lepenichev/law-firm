@@ -1,0 +1,93 @@
+.legal-issue {
+    margin-left: 69px;
+
+    &__container {
+        max-width: 1440px;
+        margin: auto;
+    }
+
+    &__heading {
+        max-width: 629px;
+        color: white;
+        letter-spacing: 5px;
+        line-height: 72px;
+    }
+
+    &__text {
+        margin-top: 13px;
+        color: var(--gray-color);
+        font-family: "Montserrat";
+        letter-spacing: 0.2px;
+    }
+
+    &__consultation {
+        margin-top: 58px;
+        letter-spacing: 0.2px;
+    }
+
+    &__consultation-text {
+        font-size: 16px;
+        font-family: "optimal", sans-serif;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: 26px;
+    }
+
+    &__items {
+        margin-top: 74px;
+        max-width: 910px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+        gap: 2px;
+    }
+
+    &__item {
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgba(35, 34, 40, 62%);
+        min-height: 144px;
+        padding: 38px 32px;
+    }
+
+    &__value {
+        font-size: 40px;
+        color: var(--light-yellow)
+    }
+
+    &__item-text {
+        margin-top: 11px;
+        font-size: 14px;
+        max-width: 218px;
+    }
+
+    @media (max-width: 1030px) {
+        margin: 0 27px 0 29px;
+    }
+
+    @media (max-width: 470px) {
+
+        &__heading {
+            letter-spacing: 3px;
+            line-height: 52px;
+        }
+
+        &__form {
+            flex-wrap: wrap;
+        }
+
+        &__items {
+            margin-top: 44px;
+        }
+
+        &__item {
+            width: 80%;
+        }
+    }
+        
+}

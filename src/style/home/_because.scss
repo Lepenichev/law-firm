@@ -1,0 +1,165 @@
+.because {
+background-image: url(../../img/column.png);
+background-position: left;
+background-repeat: no-repeat; 
+
+    &__line{
+        margin-bottom: 4px;
+        margin-right: 2px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1440px;
+        margin: auto;
+        background-image: 
+            url(../../img/painting.png),
+            url(../../img/bracket-up.svg),
+            url(../../img/bracket-down.svg),
+            url(../../img/director.png);
+        background-position: 
+            right 60px bottom 67px, 
+            right 187px top 20px, 
+            right 847px bottom 104px, 
+            right 909px bottom -11px;
+        background-repeat: no-repeat; 
+    }
+
+    &__content {
+        max-width: 767px;
+        width: 100%;
+        margin-right: 41px;
+        margin-bottom: 86px;
+    }
+
+    &__heading {
+        color: var(--gray-color);
+        margin-top: 81px;
+        letter-spacing: 0.2px;
+        margin-bottom: 29px;
+        margin-left: 3px;       
+    }
+
+    &__head {
+        margin-top: 22px;
+        line-height: 52px;
+        letter-spacing: 4px;
+        max-width: 430px;
+    }
+
+    &__text {
+        max-width: 523px;
+        color: #232228;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        margin-bottom: 105px;
+        margin-left: 1px;
+    }
+
+    &__break {
+        display: block;
+        line-height: 24px;
+        letter-spacing: 0.2px;
+        font-family: "montserrat";
+        font-size: 16px;
+    }
+
+    &__employee {
+        letter-spacing: 0.2px;
+    }
+
+    &__name {
+        margin-bottom: 16px;
+        letter-spacing: 1.5px;
+    }
+
+    @media (max-width: 1300px) {
+        &__container{
+            background-position: 
+                right 60px bottom 67px, 
+                right 160px top 20px, 
+                right 650px bottom 104px, 
+                right 770px bottom -11px;
+        }
+
+        &__content {
+            max-width: 570px;
+        }
+    }
+
+    @media (max-width: 1100px) {
+        &__container {
+            background-position: 
+                right 60px bottom 67px, 
+                right 160px top 20px, 
+                right 650px bottom 104px, 
+                right 670px bottom -11px;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        background-position: top 0px left -140px;
+
+        &__container {
+            background-position: 
+                right 60px bottom 67px, 
+                right 60px top -30px, 
+                right 550px bottom 50px, 
+                right 566px bottom -70px;
+        }
+
+        &__content {
+            max-width: 520px;
+            margin-right: 27px;
+            margin-bottom: 60px
+        }
+
+        &__heading {
+            margin-top: 50px;
+        }
+    }
+
+    @media (max-width: 870px) {
+        background-position: top 0px left -250px;
+
+        &__container {
+            margin-left: 68px;
+            background-image: 
+                url(../../img/painting.png),
+                url(../../img/bracket-up.svg),
+                url(../../img/bracket-down.svg);
+            background-position: 
+                right 60px bottom 67px, 
+                right 60px top -30px, 
+                right 550px bottom 50px;
+        }
+    }
+
+    @media (max-width: 690px) {
+        background-position: top 0px left -310px;
+
+        &__container {
+            background-image: url(../../img/painting.png);
+            background-position: right -20px bottom 40px;
+        }
+    }
+
+    @media (max-width: 520px) {
+        &__head {
+            font-weight: 600;
+            line-height: 32px;
+            letter-spacing: 3px
+        }
+    }
+
+    @media (max-width: 389px) {
+        background: none;
+        &__container {
+            margin-left: 29px;
+        }
+        &__text {
+            margin-bottom: 55px
+        }
+    }
+}

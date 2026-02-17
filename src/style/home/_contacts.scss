@@ -1,0 +1,105 @@
+.contacts {
+    background-image: url(../../img/contacts.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-transform: uppercase;
+
+    span {
+        color: var(--light-yellow);
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        margin: 80px 40px 89px;
+        grid-column: 2;
+    }
+
+    &__header {
+        text-transform: math-auto;
+        letter-spacing: 0.2px;
+        margin-bottom: 36px;
+    }
+
+    &__head {
+        color: white;
+        margin-top: 31px;
+        margin-bottom: 0px;
+        letter-spacing: 4.8px;
+    }
+
+    &__info {
+        font-family: 'optimal', sans-serif;
+        color: white;
+    }
+
+    &__info-data1 {
+        margin: 0px 80px 0px 8px;
+        font-family: "optimal";
+        letter-spacing: 0.5px;
+    }
+
+    &__info-data2 {
+        margin-left: 32px;
+        letter-spacing: 1.7px;
+    }
+
+    &__info-data3 {
+        margin-left: 32px;
+        letter-spacing: 1.4px;
+    }
+
+    &__address {
+        margin-top: 32px;
+        margin-bottom: 40px;
+    }
+
+    &__consultation {
+        font-family: 'optimal', sans-serif;
+        color: white;
+    }
+
+    &__form {
+        margin-top: 24px;
+        display: flex;
+        gap: 8px;
+    }
+
+    @media (max-width: 1024px) {
+        grid-template-columns: 1fr;
+
+        &__head {
+            font-weight: 900;
+        }
+
+        &__container {
+            grid-column: 1;
+            margin: 60px 20px;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__tel {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        &__info-data3 {
+            letter-spacing: 0.4px;
+        }
+
+        &__form {
+            flex-direction: column;
+        }
+
+        &__form input,
+        &__form button {
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+}

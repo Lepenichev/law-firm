@@ -1,0 +1,131 @@
+.useful-know {
+    background-color: white;
+    padding: 80px 57px 80px 69px;
+
+    &__container {
+        width: 100%;
+        max-width: 1299px;
+        margin: auto;
+    }
+
+    &__text {
+        letter-spacing: 0.2px;
+        margin-left: 3px;
+    }
+
+    &__read {
+        color: var(--dark);
+        font-family: "optimal", sans-serif;
+        border: solid 1px;
+        border-color: #E3C37A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        width: 107px;
+        height: 42px;
+    }
+
+    &__break {
+        display: block;
+        letter-spacing: 2.3px;
+    }
+    
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__head {
+        margin: 0px;
+        margin-top: 30px;
+        letter-spacing: 4px;
+    }
+
+    &__read-big {
+        width: 177px;
+        height: 42px;
+        text-transform: uppercase;
+        
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
+        margin-top: 50px;
+        gap: 24px;
+    }
+
+    &__foto {
+        width: 100%;
+        height: 239px;
+        object-fit: cover;
+        display: block;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 430px;
+    }
+
+    &__item--themis {
+        background: url(../../img/themis.png) center / cover no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 100%;
+        a {
+            color: white;
+        }
+    }
+
+    &__inside {
+        margin: 23px 24px 38px 32px;
+        &--marg {
+            margin: 25px 56px 40px 32px;
+            letter-spacing: -0.8px;
+        }
+    }
+
+    &__inside-text {
+        font-size: 14px;
+    }
+
+    &__inside-white {
+        color: white;
+        max-width: 220px;
+        margin: 12px 0px 6px;
+        line-height: 25px;
+        letter-spacing: 1px;
+    }
+
+    &__inside-dark {
+        color: var(--dark);
+        line-height: 150%;
+        margin: 11px 0px 8px;
+        letter-spacing: 1.5px;
+    }
+
+    @media(max-width: 900px) {
+        padding: 50px 27px 50px 29px;
+    }
+
+    @media(max-width: 720px) {
+        &__header {
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        &__head{
+            font-weight: 900;
+        }
+    }
+
+    @media(max-width: 720px) {
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+        }
+    }
+}

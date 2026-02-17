@@ -1,0 +1,19 @@
+.copyright {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 0.3px;
+
+    &__text {
+        height: 19px;
+        text-align: center;
+        margin: 22px 0px 22px;
+        font-size: 12px;
+    }
+
+    @media(max-width: 880px) {
+        &__text {
+            margin: 12px 0px 12px;
+            font-size: 10px;
+        }
+    }
+}

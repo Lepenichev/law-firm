@@ -1,0 +1,124 @@
+body {
+background-color: #F6F4F5;
+margin: 0px;
+font-family: "Montserrat";
+font-optical-sizing: auto;
+font-style: normal;
+color: rgba(177, 177, 177, 100%);
+--light-yellow: #E3C37A;
+--primary-color:#A4834E;
+--gray-color: rgb(177 177 177 / 60%);;
+--dark: #232228;
+font-size: 16px;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+::placeholder { 
+    color: var(--gray-color); 
+}
+
+h1 {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 100;
+    text-transform: uppercase; 
+    font-family: 'doloman';
+    margin: 0;
+}
+
+h2{
+    font-family: 'doloman';
+    font-size: clamp(22px, 4vw, 40px);
+    font-weight: 100;
+    text-transform: uppercase; 
+    margin: 0;
+    color: var(--dark)
+}
+
+h3 {
+    font-family: 'doloman';
+    font-size: 16px;
+    font-weight: 100;
+    color: black;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+span {
+    font-family: 'doloman';
+}
+
+.button {
+    background: none;
+    color: var(--dark);
+    font-size: 16px;
+    border: solid 1px;
+    border-color: rgb(227, 195, 122);
+    cursor: pointer;
+    font-family: 'optima', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.button--sm {
+    width: 143px;
+    height: 44px;
+}
+
+.button--md {
+    width: 169px;
+    height: 44px;
+}
+
+.button--lg {
+    width: 200px;
+    height: 44px;
+}
+
+.button-white--lg {
+    width: 200px;
+    height: 44px;
+    color: white;
+}
+
+.input {
+    border: none;
+    outline: none;
+    padding-left: 12px;
+    height: 44px;
+}
+
+.input:focus {
+    outline: 2px solid var(--primary-color);
+}
+
+.input--md {
+    max-width: 298px;
+    width: 100%;
+}
+
+.input--lg {
+    max-width: 534px;
+    width: 100%;
+}
+
+header {
+    background-image: url(../../img/statue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.golden-text {
+    color: var(--primary-color);
+}
+
+
+

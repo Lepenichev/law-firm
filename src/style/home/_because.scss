@@ -2,6 +2,7 @@
 background-image: url(../../img/column.png);
 background-position: left;
 background-repeat: no-repeat; 
+position: relative;
 
     &__line{
         margin-bottom: 4px;
@@ -13,21 +14,36 @@ background-repeat: no-repeat;
         justify-content: flex-end;
         max-width: 1440px;
         margin: auto;
-        background-image: 
-            url(../../img/painting.png),
-            url(../../img/bracket-up.svg),
-            url(../../img/bracket-down.svg),
-            url(../../img/director.png);
-        background-position: 
-            right 60px bottom 67px, 
-            right 187px top 20px, 
-            right 847px bottom 104px, 
-            right 909px bottom -11px;
-        background-repeat: no-repeat; 
+    }
+
+    &__img {
+        position: absolute;
+    }
+
+    &__img-man {
+        left: 10px;
+        bottom: 0;
+        object-fit: cover;
+    }
+
+    &__img-bracket-down {
+        top: 290px;
+        left: -100px;
+    }
+
+    &__img-bracket-up {
+        top: 15px;
+        right: 150px;
+    }
+
+    &__img-painting {
+        bottom: -10px;
+        right: 20px;
     }
 
     &__content {
-        max-width: 767px;
+        position: relative;
+        max-width: 770px;
         width: 100%;
         margin-right: 41px;
         margin-bottom: 86px;
@@ -35,21 +51,21 @@ background-repeat: no-repeat;
 
     &__heading {
         color: var(--gray-color);
-        margin-top: 81px;
+        margin-top: 80px;
         letter-spacing: 0.2px;
-        margin-bottom: 29px;
+        margin-bottom: 30px;
         margin-left: 3px;       
     }
 
     &__head {
-        margin-top: 22px;
+        margin-top: 20px;
         line-height: 52px;
         letter-spacing: 4px;
         max-width: 430px;
     }
 
     &__text {
-        max-width: 523px;
+        max-width: 520px;
         color: #232228;
         line-height: 24px;
         letter-spacing: 0.2px;
@@ -70,44 +86,29 @@ background-repeat: no-repeat;
     }
 
     &__name {
-        margin-bottom: 16px;
+        margin-bottom: 15px;
         letter-spacing: 1.5px;
     }
 
     @media (max-width: 1300px) {
-        &__container{
-            background-position: 
-                right 60px bottom 67px, 
-                right 160px top 20px, 
-                right 650px bottom 104px, 
-                right 770px bottom -11px;
-        }
-
+        
         &__content {
             max-width: 570px;
         }
+
+        &__img-bracket-up {
+            right: 120px;
+        }
     }
 
-    @media (max-width: 1100px) {
-        &__container {
-            background-position: 
-                right 60px bottom 67px, 
-                right 160px top 20px, 
-                right 650px bottom 104px, 
-                right 670px bottom -11px;
+    @media (max-width: 1200px) {
+        &__img-man {
+            left: -130px;
         }
     }
 
     @media (max-width: 1000px) {
         background-position: top 0px left -140px;
-
-        &__container {
-            background-position: 
-                right 60px bottom 67px, 
-                right 60px top -30px, 
-                right 550px bottom 50px, 
-                right 566px bottom -70px;
-        }
 
         &__content {
             max-width: 520px;
@@ -118,31 +119,39 @@ background-repeat: no-repeat;
         &__heading {
             margin-top: 50px;
         }
+
+        &__img-man {
+            height: 550px;
+        }
+
+        &__img-bracket-down {
+            left: -50px;
+        }
     }
 
-    @media (max-width: 870px) {
+    @media (max-width: 890px) {
         background-position: top 0px left -250px;
+        padding: 0 27px 0 29px;
 
-        &__container {
-            margin-left: 68px;
-            background-image: 
-                url(../../img/painting.png),
-                url(../../img/bracket-up.svg),
-                url(../../img/bracket-down.svg);
-            background-position: 
-                right 60px bottom 67px, 
-                right 60px top -30px, 
-                right 550px bottom 50px;
+        &__img-man {
+            display: none;
         }
     }
 
     @media (max-width: 690px) {
-        background-position: top 0px left -310px;
+        background-image: none;
 
         &__container {
-            background-image: url(../../img/painting.png);
-            background-position: right -20px bottom 40px;
+            justify-content: center;
         }
+
+        &__img {
+            display: none;
+        }
+
+        &__text {
+            margin-bottom: 65px;
+        }    
     }
 
     @media (max-width: 520px) {
@@ -154,7 +163,7 @@ background-repeat: no-repeat;
     }
 
     @media (max-width: 389px) {
-        background: none;
+
         &__container {
             margin-left: 29px;
         }

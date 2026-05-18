@@ -1,5 +1,5 @@
 .legal-issue {
-    margin-left: 69px;
+    margin-left:70px;
 
     &__container {
         max-width: 1440px;
@@ -7,7 +7,7 @@
     }
 
     &__heading {
-        max-width: 629px;
+        max-width: 630px;
         color: white;
         letter-spacing: 5px;
         line-height: 72px;
@@ -15,13 +15,13 @@
 
     &__text {
         margin-top: 13px;
-        color: var(--gray-color);
+        color: white;
         font-family: "Montserrat";
         letter-spacing: 0.2px;
     }
 
     &__consultation {
-        margin-top: 58px;
+        margin-top: 60px;
         letter-spacing: 0.2px;
     }
 
@@ -40,7 +40,7 @@
     }
 
     &__items {
-        margin-top: 74px;
+        margin-top: 75px;
         max-width: 910px;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
@@ -61,13 +61,13 @@
     }
 
     &__item-text {
-        margin-top: 11px;
+        margin-top: 10px;
         font-size: 14px;
-        max-width: 218px;
+        max-width: 220px;
     }
 
     @media (max-width: 1030px) {
-        margin: 0 27px 0 29px;
+        margin: 0 27px 0 px;
     }
 
     @media (max-width: 470px) {
@@ -82,11 +82,8 @@
         }
 
         &__items {
-            margin-top: 44px;
-        }
-
-        &__item {
-            width: 80%;
+            margin-top: 45px;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         }
     }
         

@@ -25,12 +25,12 @@
         padding-left: 10px;
         margin-top: 80px;
         letter-spacing: 0.2px;
-        margin-bottom: 51px;
+        margin-bottom: 50px;
     }
 
     &__head {
         margin: 0px;
-        margin-top: 29px;
+        margin-top: 30px;
         letter-spacing: 4.3px;
     }
 
@@ -38,7 +38,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(306px, 1fr));
         gap: 24px;
-        max-width: 1296px;
+        max-width: 1300px;
         width: 100%;
     }
 
@@ -57,7 +57,7 @@
 
     &__subtitles {
         margin: 0px;
-        margin-top: 21px;
+        margin-top: 20px;
         letter-spacing: 1.8px;
         font-weight: 600;
     }
@@ -76,8 +76,8 @@
     }
 
     &__button {
-        margin-top: 58px;
-        margin-bottom: 82px;
+        margin-top: 60px;
+        margin-bottom: 80px;
     }
 
     @media (max-width: 1378px) {

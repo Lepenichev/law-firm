@@ -21,10 +21,10 @@ const reviewsSwiper = () => {
             bulletActiveClass: 'swiper-pagination-bullet-active',
         },
 
-        autoplay: {
+        /*autoplay: {
             delay: 3000,
             disableOnInteraction: false,
-        },
+        },*/
     });
 }
 

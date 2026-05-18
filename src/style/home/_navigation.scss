@@ -1,6 +1,6 @@
 .navigation {
     border-bottom: solid 1px rgb(62, 59, 62);;
-    margin-bottom: 67px;
+    margin-bottom: 70px;
     position: relative;
 
     &__container {
@@ -8,7 +8,7 @@
         margin: auto;
         display: flex;
         justify-content: space-between;
-        padding: 25px 57px 0px 69px;
+        padding: 25px 57px 0px 70px;
     }
     
     &__logo {
@@ -18,11 +18,11 @@
     }
 
     &__items {
-        max-width: 696px;
+        max-width: 700px;
         width: 100%;
         display: flex;
         justify-content: flex-end;
-        gap: 29px;
+        gap: 30px;
     }
 
     &__item {
@@ -30,7 +30,7 @@
         border-bottom: solid 1px;
         border-color: transparent;
         padding-bottom: 27px;
-        color: var(--gray-color);
+        color: white;
         transition: color .3s, border-color .3s;
         text-decoration-line: none;
     }
@@ -85,7 +85,7 @@
     @media (max-width: 1030px) {
 
         &__container {
-            padding: 25px 27px 0px 29px;
+            padding: 25px 27px 0px 30px;
         }
 
         &__logo {
@@ -93,13 +93,13 @@
         }
 
         &__items {
-            max-width: 603px;
+            max-width: 610px;
         }
     }
 
     @media (max-width: 930px) {
         &__items {
-            max-width: 508px;
+            max-width: 510px;
             gap: 10px;
         }
     }
@@ -109,14 +109,14 @@
         margin-bottom: 37px;
         
         &__container {
-            padding: 15px 27px 15px 29px;
+            padding: 15px 27px 15px 30px;
         }
 
         &__items {
             position: absolute;
             top: 100%;
             left: 0;
-            max-width: 768px;
+            max-width: 770px;
             width: 100%;
             flex-direction: column;
             background: rgb(62, 59, 62);

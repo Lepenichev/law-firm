@@ -14,7 +14,7 @@
     &__container {
         display: flex;
         flex-direction: column;
-        margin: 80px 40px 89px;
+        margin: 80px 40px 90px;
         grid-column: 2;
     }
 
@@ -26,7 +26,7 @@
 
     &__head {
         color: white;
-        margin-top: 31px;
+        margin-top: 30px;
         margin-bottom: 0px;
         letter-spacing: 4.8px;
     }
@@ -82,6 +82,8 @@
     }
 
     @media (max-width: 600px) {
+        background: #222127;
+
         &__tel {
             display: flex;
             flex-direction: column;

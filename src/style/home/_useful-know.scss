@@ -1,10 +1,10 @@
 .useful-know {
     background-color: white;
-    padding: 80px 57px 80px 69px;
+    padding: 80px 57px 80px 70px;
 
     &__container {
         width: 100%;
-        max-width: 1299px;
+        max-width: 1300px;
         margin: auto;
     }
 
@@ -58,7 +58,7 @@
 
     &__foto {
         width: 100%;
-        height: 239px;
+        height: 240px;
         object-fit: cover;
         display: block;
     }
@@ -104,7 +104,7 @@
     &__inside-dark {
         color: var(--dark);
         line-height: 150%;
-        margin: 11px 0px 8px;
+        margin: 10px 0px 8px;
         letter-spacing: 1.5px;
     }
 

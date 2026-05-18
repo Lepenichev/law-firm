@@ -27,12 +27,12 @@
         overflow: hidden;
         width: 100%;
         z-index: 0;
-        padding-bottom: 139px;
+        padding-bottom: 140px;
     }
 
     &__items {
         display: flex;
-        margin-top: 58.5px;
+        margin-top: 60px;
         margin-left: 7px;
     }
 
@@ -41,11 +41,8 @@
         flex-shrink: 0;
         position: relative;
         min-height: 348px;
-        background-image:
-        url(../../img/bracket-down.svg),
-        url(../../img/bracket-up.svg), 
-        url(../../img/back-reviews.png);
-        background-position: bottom -115px left 329px, top -115px right 310px, center;
+        background-image: url(../../img/back-reviews.png);
+        background-position: center;
         background-repeat: no-repeat;
         
     }
@@ -69,7 +66,7 @@
         position: absolute;
         right: 50%;
         transform: translateX(50%);
-        bottom: 279px;
+        bottom: 280px;
     }
 
     &__data {
@@ -82,6 +79,21 @@
     &__name{
         letter-spacing: 1.3px;
         margin-bottom: 6px;
+    }
+
+    &__bracket-down, 
+    &__bracket-up {
+        position: absolute;
+    }
+
+    &__bracket-up {
+        top: -115px;
+        right: 310px;
+    }
+
+    &__bracket-down {
+        bottom: -115px;
+        left: 330px;
     }
 
     &__pagination {
@@ -155,16 +167,20 @@
         padding: 0 70px;
 
         &__item {
-            border-radius: 11%;
+            border-radius: 10%;
             padding: 10px;
-            background-position: 
-                bottom -115px left 140px, 
-                top -115px right 140px, 
-                center;
         }
 
         &__button {
             display: none;
+        }
+
+        &__bracket-up {
+            right: 50px;
+        }
+
+        &__bracket-down {
+            left: 50px;
         }
     }
 
@@ -173,13 +189,6 @@
 
         &__header {
             margin-top: 50px;
-        }
-
-        &__item {
-            background-position: 
-                bottom -115px left 50px, 
-                top -115px right 50px, 
-                center;
         }
 
         &__head {
@@ -200,6 +209,11 @@
             background-image:none;
             background-color: white;
             border-radius: 10%;
+        }
+
+        &__bracket-up, 
+        &__bracket-down {
+            display: none;
         }
     }
 
